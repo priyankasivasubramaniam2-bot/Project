@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Priyanka's student portfolio showcasing web development skills and projects.">
+    <title>Priyanka | Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="header" id="home">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="brand" aria-label="Priyanka home">
+                <span class="logo">P</span>
+                <span>Priyanka</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="navLinks">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link active" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            title="Switch theme">
+        🌙 Dark
+    </button>
+</div>
+
+            <a href="#contact" class="talk-button">Let's talk</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+                <h1>Hi, I'm Priyanka.<br>
+                    I build thoughtful<br>
+                    digital experiences<span class="dot">.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I'm a student and aspiring web developer who enjoys
+                    creating simple, beautiful and user-friendly websites.
+                </p>
+
+                <a href="#projects" class="primary-button">
+                    View my work <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <!-- Replace this image URL with your own local image if desired -->
+                <img
+                    src="C:\Users\KGCAS\Downloads\neon-aura-portrait-woman.jpg"
+                    alt="Portrait representing Priyanka's portfolio"
+                    class="profile-photo">
+                <span class="decor decor-one" aria-hidden="true">✳</span>
+                <span class="decor decor-two" aria-hidden="true">✦</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container about-content">
+                <div>
+                    <p class="eyebrow">A LITTLE ABOUT ME</p>
+                    <h2>Learning today,<br>creating for tomorrow.</h2>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Priyanka, a student interested in web
+                        development and technology. I enjoy learning how
+                        websites work and turning ideas into useful digital
+                        experiences.
+                    </p>
+                    <p>
+                        I'm developing my skills in HTML, CSS and JavaScript.
+                        My goal is to keep learning, build creative projects
+                        and become a confident web developer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">WHAT I'VE BEEN WORKING ON</p>
+                        <h2>Projects<span class="dot">.</span></h2>
+                    </div>
+                    <div class="project-filters" aria-label="Filter projects">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="learning">Learning</button>
+                    </div>
+                </div>
+
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card peach" data-category="web">
+                        <img
+                            src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=700&q=80"
+                            alt="Healthy food displayed on a table"
+                            class="project-image">
+                        <div class="project-info">
+                            <p class="project-number">01 / WEB PROJECT</p>
+                            <h3>Recipe Finder</h3>
+                            <p>
+                                A practice concept for discovering recipes
+                                and exploring food ideas.
+                            </p>
+                            <p class="project-tools">HTML · CSS · JavaScript</p>
+                            <button class="details-btn" type="button"
+                                    aria-expanded="false">
+                                View details <span aria-hidden="true">↗</span>
+                            </button>
+                            <p class="project-details" hidden>
+                                I would use this project to practise page
+                                layouts, search interfaces and interactive
+                                recipe cards.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card blue" data-category="learning">
+                        <img
+                            src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=700&q=80"
+                            alt="Notebook and study materials on a desk"
+                            class="project-image">
+                        <div class="project-info">
+                            <p class="project-number">02 / STUDENT PROJECT</p>
+                            <h3>Study Planner</h3>
+                            <p>
+                                A student-friendly concept for organizing
+                                study tasks and daily learning goals.
+                            </p>
+                            <p class="project-tools">HTML · CSS · JavaScript</p>
+                            <button class="details-btn" type="button"
+                                    aria-expanded="false">
+                                View details <span aria-hidden="true">↗</span>
+                            </button>
+                            <p class="project-details" hidden>
+                                This project helps me practise organizing
+                                information and creating a clear, usable
+                                interface for students.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card green" data-category="web">
+                        <img
+                            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=700&q=80"
+                            alt="Colorful coastal village and sea"
+                            class="project-image">
+                        <div class="project-info">
+                            <p class="project-number">03 / WEB PROJECT</p>
+                            <h3>Travel Journal</h3>
+                            <p>
+                                A travel-inspired page for sharing places,
+                                photographs and memorable experiences.
+                            </p>
+                            <p class="project-tools">HTML · CSS · JavaScript</p>
+                            <button class="details-btn" type="button"
+                                    aria-expanded="false">
+                                View details <span aria-hidden="true">↗</span>
+                            </button>
+                            <p class="project-details" hidden>
+                                This concept lets me practise image galleries,
+                                responsive cards and visual storytelling.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="project-note">
+                    Note: These are portfolio practice concepts. Replace
+                    them with your completed projects and working links
+                    before submitting your assignment.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <p class="eyebrow">TOOLS I'M LEARNING</p>
+                <h2>My Skills<span class="dot">.</span></h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-icon html-icon">5</span>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Page structure</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon css-icon">3</span>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Styling and layouts</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon js-icon">JS</span>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Web interactions</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon teamwork-icon">✦</span>
+                        <div>
+                            <h3>Teamwork</h3>
+                            <p>Collaboration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container contact-layout">
+                <div class="contact-copy">
+                    <p class="eyebrow">LET'S CONNECT</p>
+                    <h2>Have an idea?<br>Let's talk<span class="dot">.</span></h2>
+                    <p>
+                        Have a question or want to discuss a project?
+                        Send me a message using the form.
+                    </p>
+                    <a class="email-link"
+                       href="mailto:priyankasivasubramaniam2@gmail.com">
+                        priyankasivasubramaniam2@gmail.com
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" rows="4"
+                              placeholder="Write your message..." required></textarea>
+
+                    <button class="primary-button submit-button" type="submit">
+                        Check message <span aria-hidden="true">→</span>
+                    </button>
+
+                    <p class="form-status" id="formStatus" role="status"
+                       aria-live="polite"></p>
+                    <p class="form-note">
+                        This demo checks your form but does not send or store
+                        messages. Use the email link to contact me.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="footer-brand">Priyanka<span class="dot">.</span></a>
+            <p>Designed and built by Priyanka</p>
+            <p>© <span id="year">2026</span> Priyanka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop"
+            aria-label="Back to top" title="Back to top">
+        ↑
+    </button>
+
+</body>
+</html>
